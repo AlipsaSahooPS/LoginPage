@@ -4,10 +4,10 @@ export default {
    theme: {
       extend: {
          colors: {
-            "ps-red": "#FE414D",
+            ps_red: "#FE414D",
             "ps-dark-grey": "#B4B4B4",
             "ps-light-grey": "#EEEEEE",
-            "ps-black": "#000000",
+            ps_black: "#000000",
          },
       },
    },

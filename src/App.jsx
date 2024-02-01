@@ -7,13 +7,7 @@ const App = () => {
    return (
       <>
          {/* <FilledButton btnText="Click me" /> */}
-         <Input
-            width={30}
-            type="text"
-            lable="Input Field"
-            placeholder="Input Placeholder"
-         />
-         {/* <TransparentButton /> */}
+         <TransparentButton color="ps_black" />
       </>
       //remember I added custom colors in my tailwind config file, so you color names may differ
    );
