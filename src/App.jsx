@@ -1,17 +1,16 @@
 import "./App.css";
+// import Header from "./Molecules/Header";
 
-import TransparentButton from "./Components/01Buttons/TransparentButton/TransparentButton";
+// import Button from "./Components/Buttons/Button";
 import Input from "./Components/InputField/Input";
-import Logo from "./Components/Logo/Logo";
+// import LoginBox from "./Molecules/Login-Box";
 
 const App = () => {
    return (
       <>
-         {/* <FilledButton btnText="Click me" /> */}
-         {/* <TransparentButton color="ps_black" /> */}
-         <Logo />
+         {/* <Header /> */}
+         <Input type="abc" placeholder="abc" label="abc" />
       </>
-      //remember I added custom colors in my tailwind config file, so you color names may differ
    );
 };
 
