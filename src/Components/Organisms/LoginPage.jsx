@@ -5,18 +5,20 @@ import LoginBox from "../../Molecules/LoginBox";
 export default function LoginPage() {
    return (
       <>
-         <Header isButtonPresent={0} />
-         <span className="h-[78vh] flex flex-col items-center justify-center mt-[-20px]">
+         <Header isButtonPresent={false} aria-label="Page Header" />
+         <fieldset
+            className="h-[78vh] flex flex-col items-center justify-center mt-[-20px]"
+            aria-label="Login Section"
+         >
             <h1
                className="w-full text-3xl font-medium flex items-center justify-center mb-4"
-               aria-label="Login Text"
-               role="heading"
+               aria-label="Login Heading"
             >
                Login
             </h1>
             <LoginBox />
-         </span>
-         <Footer />
+         </fieldset>
+         <Footer aria-label="Page Footer" />
       </>
    );
 }

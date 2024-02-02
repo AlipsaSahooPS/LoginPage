@@ -1,5 +1,5 @@
-import Button from "../Components/Buttons/Button";
-import Input from "../Components/InputField/Input";
+import Button from "../Components/Atoms/Button";
+import Input from "../Components/Atoms/Input";
 
 export default function LoginBox() {
    const handleSubmit = (e) => {
@@ -18,27 +18,27 @@ export default function LoginBox() {
                   type="email"
                   placeholder="Enter your email"
                   label="Email"
-                  isRequired={1}
+                  isRequired={true}
                   ariaLabel="Email input field"
                />
                <Input
                   type="password"
                   placeholder="Enter your password"
                   label="Password"
-                  isRequired={1}
+                  isRequired={true}
                   ariaLabel="Password input field"
                />
             </fieldset>
-            <span className="flex justify-center">
+            <section className="flex justify-center">
                <Button
                   buttonText="Login"
-                  isFilled={1}
+                  isFilled={true}
                   textColor="ps_white"
                   backgroundColor="ps_red"
                   onClick={handleSubmit}
                   ariaLabel="Login button"
                />
-            </span>
+            </section>
          </form>
       </section>
    );
