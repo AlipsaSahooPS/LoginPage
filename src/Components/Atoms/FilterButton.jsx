@@ -1,15 +1,14 @@
-export default function FilterButton({ value, setValue }) {
+export default function FilterButton({ count, text }) {
    const handleClick = () => {
-      setValue({ value: value.value + 1 });
+      console.log("Clicked");
    };
-
    return (
       <button
-         className="bg-ps_dark_grey text-white font-bold px-4 rounded-lg flex flex-col items-center"
+         className="bg-ps_dark_grey text-white font-bold px-5 rounded-md flex flex-col items-center"
          onClick={handleClick}
       >
-         {value.value}
-         <span className="text-xs mb-1">Created</span>
+         {count}
+         <span className="text-xs mb-1">{text}</span>
       </button>
    );
 }
