@@ -1,12 +1,12 @@
+import { useState } from "react";
 import "./App.css";
-import LoginPage from "./Components/Organisms/LoginPage";
+import FilterButton from "./Components/Atoms/FilterButton";
 
-const App = () => {
+export default function App() {
+   const [value, setValue] = useState({ value: 0 });
    return (
       <>
-         <LoginPage />
+         <FilterButton value={value} setValue={setValue} />
       </>
    );
-};
-
-export default App;
+}
