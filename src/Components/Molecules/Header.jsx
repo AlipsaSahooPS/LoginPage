@@ -5,8 +5,8 @@ import Button from "../Atoms/Button.jsx";
 
 export default function Header({
    isButtonPresent = true,
-   leftButtonText = "Add Candidate",
-   rightButtonText = "Logout",
+   leftButtonText,
+   rightButtonText,
 }) {
    const handleClick = () => {
       console.log("Button clicked!");

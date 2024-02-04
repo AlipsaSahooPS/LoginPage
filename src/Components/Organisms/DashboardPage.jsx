@@ -4,16 +4,10 @@ import Header from "../Molecules/Header";
 import Filter from "../Molecules/Filter";
 import SearchBar from "../Atoms/SearchBar";
 import CandidateCard from "../Molecules/CandidateCard";
-import image from "../../imgs/avatar_vox.webp";
+import avatar from "../../imgs/avatar_vox.webp";
 
 export default function DashboardPage() {
-   const content1 = {
-      name: "Alipsa",
-      email: "abc@gmail.com",
-      role: "HR",
-      competency: "React",
-   };
-   const content2 = {
+   const content = {
       name: "Alipsa",
       email: "abc@gmail.com",
       role: "HR",
@@ -22,8 +16,8 @@ export default function DashboardPage() {
 
    return (
       <>
-         <Header aria-label="Page Header" />
-         <section className="mt-5 ml-12 mr-12">
+         <Header aria-label="Page Header" leftButtonText="Add Candidate" />
+         <section className="mt-5 ml-10 mr-10">
             <SearchBar />
          </section>
          <fieldset className="flex flex-col items-center mb-10 w-full">
@@ -36,19 +30,11 @@ export default function DashboardPage() {
             <section className="mt-3">
                <Filter />
             </section>
-            <section className="mt-5 flex flex-wrap gap-5">
-               <div className="w-full md:w-1/2 lg:w-1/4 xl:w-1/4">
-                  <CandidateCard content={content1} image={image} />
-               </div>
-               <div className="w-full md:w-1/2 lg:w-1/4 xl:w-1/4">
-                  <CandidateCard content={content2} image={image} />
-               </div>
-               <div className="w-full md:w-1/2 lg:w-1/4 xl:w-1/4">
-                  <CandidateCard content={content1} image={image} />
-               </div>
-               <div className="w-full md:w-1/2 lg:w-1/4 xl:w-1/4">
-                  <CandidateCard content={content2} image={image} />
-               </div>
+            <section className="mt-5 flex flex-wrap gap-7 justify-center">
+               <CandidateCard content={content} image={avatar} />
+               <CandidateCard content={content} image={avatar} />
+               <CandidateCard content={content} image={avatar} />
+               <CandidateCard content={content} image={avatar} />
             </section>
          </fieldset>
          <Footer aria-label="Page Footer" />
