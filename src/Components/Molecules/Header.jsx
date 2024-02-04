@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Logo from "../Components/Atoms/Logo.jsx";
-import Button from "../Components/Atoms/Button.jsx";
+import Logo from "../Atoms/Logo";
+import Button from "../Atoms/Button.jsx";
 
 export default function Header({
-   leftButtonText,
-   rightButtonText,
-   isButtonPresent,
+   isButtonPresent = true,
+   leftButtonText = "Add Candidate",
+   rightButtonText = "Logout",
 }) {
    const handleClick = () => {
       console.log("Button clicked!");
@@ -27,7 +27,7 @@ export default function Header({
                />
                <Button
                   isFilled={true}
-                  textColor="ps_black"
+                  textColor="ps_white"
                   backgroundColor="ps_red"
                   buttonText={rightButtonText}
                   onClick={handleClick}

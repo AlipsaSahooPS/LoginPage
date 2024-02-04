@@ -24,6 +24,6 @@ Button.propTypes = {
    buttonText: PropTypes.string.isRequired,
    isFilled: PropTypes.bool.isRequired,
    textColor: PropTypes.string.isRequired,
-   backgroundColor: PropTypes.string.isRequired,
+   backgroundColor: PropTypes.string,
    onClick: PropTypes.func,
 };

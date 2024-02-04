@@ -1,10 +1,13 @@
+import PropTypes from "prop-types";
+
 export default function FilterButton({ count, text }) {
    const handleClick = () => {
       console.log("Clicked");
    };
+
    return (
       <button
-         className="bg-ps_dark_grey text-white font-bold px-5 rounded-md flex flex-col items-center"
+         className="bg-ps_dark_grey text-ps_white font-bold px-5 rounded-md flex flex-col items-center"
          onClick={handleClick}
       >
          {count}
@@ -12,3 +15,8 @@ export default function FilterButton({ count, text }) {
       </button>
    );
 }
+
+FilterButton.propTypes = {
+   count: PropTypes.number,
+   text: PropTypes.string,
+};

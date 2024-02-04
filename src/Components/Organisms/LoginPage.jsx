@@ -1,6 +1,6 @@
-import Footer from "../../Molecules/Footer";
-import Header from "../../Molecules/Header";
-import LoginBox from "../../Molecules/LoginBox";
+import Footer from "../Molecules/Footer";
+import Header from "../Molecules/Header";
+import LoginBox from "../Molecules/LoginBox";
 
 export default function LoginPage() {
    return (

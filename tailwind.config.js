@@ -10,6 +10,7 @@ export default {
             ps_black: "#000000",
             ps_white: "#FFFFFF",
             ps_blue: "#079FFF",
+            ps_yellow: "#FFE63B",
          },
       },
    },

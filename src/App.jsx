@@ -1,11 +1,9 @@
-import { useState } from "react";
-import "./App.css";
-import Filter from "./Molecules/Filter";
+import DashboardPage from "./Components/Organisms/DashboardPage";
 
 export default function App() {
    return (
       <>
-         <Filter />
+         <DashboardPage />
       </>
    );
 }
